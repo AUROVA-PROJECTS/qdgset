@@ -192,19 +192,16 @@
 
 
 <!-- Teaser video-->
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/qdgset_video.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
     </div>
   </div>
-</section> -->
+</section>
 <!-- End teaser video -->
 
 <!-- Video carousel -->
@@ -260,12 +257,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Grasping objects is a simple task for humans, but transferring this ability to robots is much more complex. Traditionally, existing methods can be grouped into two separate categories: analytical and data-driven. In recent years, thanks to the 
-          increase in computing capabilities, the research community has focused its attention on the second group of algorithms. In this article, we propose a new grasping method called GeoGraspEvo. It belongs to the group of analytical methods and allows 
-          to obtain the best combination of grasping points for multi-fingered grippers, starting from only three fingers. The whole procedure is explained, starting from some gripper parameters and a RGBD image, through the extraction of the gripping areas
-          and candidates, to the developed ranking functions. Experiments are performed on a well-known dataset in both simulation and real world with a three-fingered gripper to show the quality of the presented method. The results show a successful grasping
-          rate of 91.46% in simulation and 81.46% in real world with different shaped objects with an execution time of 120 ms and 83 ms, respectively. With these results, we are able to match and improve some state-of-the-art methods in accuracy and 
-          computation time in both of the aforementioned categories, just by using CPU capabilities with a generalist method, avoiding dataset generation or long GPU training times. Code is available at the project website.
+          Recent advances in AI have led to significant results in robotic learning, but skills like grasping remain partially solved. Many recent works exploit synthetic grasping datasets to learn to grasp unknown objects. 
+          However, those datasets were generated using simple grasp sampling methods using priors. Recently, Quality-Diversity (QD) algorithms have been proven to make grasp sampling significantly more efficient. In this work, 
+          we extend QDG-6DoF, a QD framework for generating object-centric grasps, to scale up the production of synthetic grasping datasets. We propose a data augmentation method that combines the transformation of object 
+          meshes with transfer learning from previous grasping repertoires. The conducted experiments show that this approach reduces the number of required evaluations per discovered robust grasp by up to 20 %. We used this
+          approach to generate QDGset, a dataset of 6 DoF grasp poses that contains about 3.5 and 4.5 times more grasps and objects, respectively, than the previous state-of-the-art. Our method allows anyone to easily generate
+          data, eventually contributing to a large-scale collaborative dataset of synthetic grasps.
           </p>
         </div>
       </div>
