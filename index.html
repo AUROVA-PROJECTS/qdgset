@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="GeoGraspEvo: Multifinger Grasp Pose Estimation">
+  <meta property="og:title" content="GeoGraspEvo: Multifinger Grasp Pose Estimation"/>
+  <meta property="og:description" content="GeoGraspEvo: Multifinger Grasp Pose Estimation"/>
+  <meta property="og:url" content="https://aurova-projects.github.io/GeoGraspEvo/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Manipulation Planning, RGB-D Perception, Perception for Grasping and Manipulation, Grasping, Robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GeoGraspEvo: Multifinger Grasp Pose Estimation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  
+  <style>
+    .orcid-link .fa-orcid {
+      color: #A6CE39; /* ORCID green color */
+    }
+  </style>
+  
+</head>
+<body>
+
+
+  <header class="hero is-small">
+    <div class="hero-body">
+      <div class="header_menu">
+        <a href="https://aurova-projects.github.io/" style="width: 20%;"><img src="static/images/logoAUROVA.png" alt="Logo AUROVA" class="header_image"/></a>
+        <div class="header_index">
+          <a href="https://aurova-projects.github.io/" target="_self" class="home"><i class="fas fa-home" style="transform: scale(0.75) translateY(10px);"></i><strong>AUROVA</strong>&emsp;</a>&emsp;
+          <a href="https://aurova-projects.github.io/team/index.html" target="_self">Team</a>&emsp;
+          <a href="https://aurova-projects.github.io/research/index.html" target="_self">Research</a>&emsp;
+          <a href="https://aurova-projects.github.io/projects/index.html" target="_self">Projects</a>
+        </div>
+        <a href="https://www.ua.es/" target="_blank"  style="width: 22%;"><img src="static/images/logo-ua.png" alt="Logo UA" class="header_image"/></a>
+      </div>
+    </div>
+    <div class="hline"></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">GeoGraspEvo: Multifinger Grasp Pose Estimation</h1>
+            <h1 class="center">Under review at IEEE Robotics and Automation Letters (RA-L)</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Ignacio de Loyola Páez-Ubieta <sup>1</sup>
+              </span>
+              <a href="https://orcid.org/0000-0001-9901-7264" target="_blank" class="orcid-link">
+                <i class="fab fa-orcid"></i>
+              </a>,
+              <span class="author-block">
+                Daniel Frau-Alfaro <sup>1</sup>
+              </span>
+              <a href="https://orcid.org/0009-0000-4098-3783" target="_blank" class="orcid-link">
+                <i class="fab fa-orcid"></i>
+              </a>,              
+              <span class="author-block">
+                Santiago T. Puente <sup>1,2</sup>
+              </span>
+              <a href="https://orcid.org/0000-0002-6175-600X" target="_blank" class="orcid-link">
+                <i class="fab fa-orcid"></i>
+              </a>
+            </div>
+
+            <div class="is-size-4 publication-authors">
+              <span class="author-block"><sup>1</sup>AUtomatics, RObotics and Artifivial Vision (AUROVA) Lab &
+              <span class="author-block">Computer Science Research Institute (IUII) - University of Alicante
+              <span class="author-block"><sup>2</sup>Laboratoire Interdisciplinaire Carnot de Bourgogne (ICB) UMR CNRS 6303
+              <span class="author-block">Université Bourgogne Europe</span>
+            </div>
+
+            <div class="is-size-8 publication-authors">
+              <span class="author-block"><a href="mailto:ignacio.paez@ua.es" target="_blank">ignacio.paez@ua.es</a></span>
+            </div>
+
+            <div class="column has-text-centered">
+            <div class="publication-links">
+            
+            <!-- Paper link -->
+            <span class="link-block">
+              <a href="javascript:void(0)" 
+                 class="external-link button is-normal is-rounded is-light is-static" title="Coming soon">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper (coming soon)</span>
+              </a>
+            </span>
+
+            <!-- Arxiv link -->
+            <span class="link-block">
+              <a href="javascript:void(0)" 
+                 class="external-link button is-normal is-rounded is-light is-static" title="Coming soon">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv (coming soon)</span>
+              </a>
+            </span>
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href=" " target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Examples</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/Follow1_alltrackers.gif"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/Follow2_alltrackers.gif"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/n7d_BEgYg2k?si=oAVwz-0R4a1M0xAF" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Grasping objects is a simple task for humans, but transferring this ability to robots is much more complex. Traditionally, existing methods can be grouped into two separate categories: analytical and data-driven. In recent years, thanks to the 
+          increase in computing capabilities, the research community has focused its attention on the second group of algorithms. In this article, we propose a new grasping method called GeoGraspEvo. It belongs to the group of analytical methods and allows 
+          to obtain the best combination of grasping points for multi-fingered grippers, starting from only three fingers. The whole procedure is explained, starting from some gripper parameters and a RGBD image, through the extraction of the gripping areas
+          and candidates, to the developed ranking functions. Experiments are performed on a well-known dataset in both simulation and real world with a three-fingered gripper to show the quality of the presented method. The results show a successful grasping
+          rate of 91.46% in simulation and 81.46% in real world with different shaped objects with an execution time of 120 ms and 83 ms, respectively. With these results, we are able to match and improve some state-of-the-art methods in accuracy and 
+          computation time in both of the aforementioned categories, just by using CPU capabilities with a generalist method, avoiding dataset generation or long GPU training times. Code is available at the project website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Results section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+          <figure class="image">
+            <img src="static/images/results.png" alt="Summarise of obtained results with different type of objects in both simulation and real setups." >
+          </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End results section -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+        <img src="static/images/Fig1.jpg" alt="Gripper modeling for GeoGraspEvo," class="center" width="50%"/>
+        <h2 class="subtitle has-text-centered">
+          Gripper modeling for GeoGraspEvo.
+        </h2>
+</div>
+</div>
+</section>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+        <img src="static/images/GeoGraspEvo_parts.png" alt="GeoGraspEvo parts." class="center" width="85%"/>
+        <h2 class="subtitle has-text-centered">
+          GeoGraspEvo parts of the algorithm.
+        </h2>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="gif-carousel" class="carousel results-carousel">
+        <div class="item">
+            <img src="static/videos/Follow1_alltrackers_compress.gif" alt="GIF pedestrian tracking" class="center" width="75%"/>
+        </div>
+        <div class="item">
+            <img src="static/videos/Follow2_alltrackers_compress.gif" alt="GIF pedestrian tracking" class="center" width="75%"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@unpublished{PaezND,
+  author={I-L. Páez-Ubieta, D. Frau-Alfaro and S.T. Puente},
+  title={GeoGraspEvo: Multifinger Grasp Pose Estimation},
+  booktitle={Submitted to IEEE Robotics and Automation Letters (RA-L)},
+  year={N.D.}
+}
+    </code></pre>
+    </div>
+</section> 
+<!--End BibTex citation -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h3>
+          Research work was funded by:
+        </h3>
+        <ul>
+          <li>
+           Grant PID2021-122685OB-I00 funded by MICIU/AEI/10.13039/501100011033 and by ERDF/EU.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="center">
+
+          <a href="http://www.aurova.ua.es/" target="_blank"
+            class="external-link button is-normal is-dark" style="margin-right: 15px;">
+            <span class="icon">
+              <img src="static/images/favicon.png" alt="AUROVA"/>
+            </span>
+          </a>
+
+          <a href="https://github.com/AUROVA-LAB/" target="_blank"
+            class="external-link button is-normal is-dark" style="margin-right: 15px;">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCdvrdxJmwsuiLrLtZ8XDWZw" target="_blank"
+            class="external-link button is-normal is-dark">
+            <span class="icon">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>   
+
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
